@@ -1,9 +1,12 @@
 {
   "name": "widget-test",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "index.mjs",
   "license": "UNLICENSED",
+  "scripts": {
+    "start": "node --experimental-modules index.mjs"
+  },
   "devDependencies": {
-    "server": "^1.0.18"
+    "express": "^4.16.3"
   }
 }
