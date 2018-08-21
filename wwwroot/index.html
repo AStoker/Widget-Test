@@ -16,19 +16,19 @@
         <foo-test></foo-test>
         
         <template id="foo-test">
-            <style>
+            <!-- <style>
                 h1 {
                     color: blue;
                 }
-            </style>
+            </style> -->
             <h1>hello</h1>
         </template>
         <script>
             let elementTemplate = document.querySelector('#foo-test')
-            ShadyCSS.prepareTemplate(elementTemplate);
+            //ShadyCSS.prepareTemplate(elementTemplate);
             customElements.define('foo-test', class extends HTMLElement {
                 connectedCallback() {
-                    ShadyCSS.styleElement(this);
+                    //ShadyCSS.styleElement(this);
                     if (!this.shadowRoot) {
                         this.attachShadow({mode: 'open'});
                         this.shadowRoot.appendChild(document.importNode(elementTemplate.content, true));
