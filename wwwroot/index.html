@@ -1,7 +1,6 @@
 <html>
     <head>
-        <script src="widget/bundle-test.js"></script>
-        <script src="widget/libs/webcomponentsjs/webcomponents-loader.js"></script>
+        <!-- <script src="widget/libs/webcomponentsjs/webcomponents-loader.js"></script> -->
         <style>
             h1 {
                 text-decoration: underline;
@@ -13,17 +12,12 @@
         
         <etrieve-document-viewer test='food'></etrieve-document-viewer>
         
-        <foo-test></foo-test>
+        <!-- <foo-test></foo-test> -->
         
-        <template id="foo-test">
-            <!-- <style>
-                h1 {
-                    color: blue;
-                }
-            </style> -->
+        <!-- <template id="foo-test">
             <h1>hello</h1>
-        </template>
-        <script>
+        </template> -->
+        <!-- <script>
             let elementTemplate = document.querySelector('#foo-test')
             //ShadyCSS.prepareTemplate(elementTemplate);
             customElements.define('foo-test', class extends HTMLElement {
@@ -35,8 +29,9 @@
                     }
                 }
             })
-        </script>
+        </script> -->
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js" data-main="main"></script>
+        <script src="widget/bundle-test.js"></script>
     </body>
 </html>
